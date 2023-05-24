@@ -65,10 +65,6 @@ seq = iaa.Sequential([
     )
 ], random_order=True)
 
-# train_generator = get_data_batch(train_sample_path, train_mask_path, batch_size=5, img_rows=img_rows, img_cols=img_cols, img_channels=4, augm="True")
-# im = next(train_generator)
-# plt.imshow(im[0][0,:,:,0])
-
 def SEBlock(se_ratio = 1, data_format = 'channels_last', ki = "he_normal"):
     def f(input_x):
         channel_axis = -1 if data_format == 'channels_last' else 1
