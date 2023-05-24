@@ -127,7 +127,6 @@ train_sample = list(csv_data['sample'])[0::4]
 csv_data_radiomics = np.concatenate((csv_data.iloc[:,csv_data.columns.str.contains('original')],
                                       csv_data.iloc[:,csv_data.columns.str.contains('log')]),
                                     axis=1)
-# csv_data_radiomics = csv_data.iloc[:,csv_data.columns.str.contains('original')]
 s1 = np.array(csv_data_radiomics[0::4])
 s2 = np.array(csv_data_radiomics[1::4])
 s3 = np.array(csv_data_radiomics[3::4])
@@ -141,7 +140,6 @@ test_sample = list(csv_data['sample'])[0::4]
 csv_data_radiomics = np.concatenate((csv_data.iloc[:,csv_data.columns.str.contains('original')],
                                       csv_data.iloc[:,csv_data.columns.str.contains('log')]),
                                     axis=1)
-# csv_data_radiomics = csv_data.iloc[:,csv_data.columns.str.contains('original')]
 s1 = np.array(csv_data_radiomics[0::4])
 s2 = np.array(csv_data_radiomics[1::4])
 s3 = np.array(csv_data_radiomics[3::4])
